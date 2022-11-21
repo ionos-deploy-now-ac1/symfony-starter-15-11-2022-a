@@ -19,7 +19,7 @@ env:
 jobs:
 # Please do not rename this job
   build-project:
-    name: build symfony-starter-15-11-2022-ab
+    name: build symfony-starter-15-11-2022-a
     runs-on: ubuntu-latest
     permissions:
       contents: read
