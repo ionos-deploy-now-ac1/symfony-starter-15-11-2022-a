@@ -19,7 +19,7 @@ env:
 jobs:
 # Please do not rename this job
   build-project:
-    name: build symfony-starter-15-11-2022-ab
+    name: build symfony-starter-15-11-2022-a
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -35,7 +35,7 @@ jobs:
         uses: ionos-deploy-now/template-renderer-action@v2
         id: template
         with:
-          input-directory: .deploy-now/symfony-starter-15-11-2022-ab
+          input-directory: .deploy-now/symfony-starter-15-11-2022-a
           output-directory: ${{ env.DEPLOYMENT_FOLDER }}
           intermediate-data-file: ${{ env.DEPLOYMENT_FOLDER }}/.template-renderer-data
 
@@ -74,4 +74,4 @@ jobs:
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
           action: upload
-          config-file: .deploy-now/symfony-starter-15-11-2022-ab/config.yaml
+          config-file: .deploy-now/symfony-starter-15-11-2022-a/config.yaml
